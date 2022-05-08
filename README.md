@@ -1,11 +1,21 @@
 <div id="top"></div>
 
 <p align="center">
-  [![Contributors][contributors-shield]][contributors-url]
-  [![Forks][forks-shield]][forks-url]
-  [![Stargazers][stars-shield]][stars-url]
-  [![Issues][issues-shield]][issues-url]
-  [![MIT License][license-shield]][license-url]
+  <a href="https://github.com/francois-smith/VIO-202/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/francois-smith/VIO-202.svg?style=for-the-badge">
+  </a>  
+  <a href="https://github.com/francois-smith/VIO-202/network/members">
+    <img src="https://img.shields.io/github/forks/francois-smith/VIO-202.svg?style=for-the-badge">
+  </a>  
+  <a href="https://github.com/francois-smith/VIO-202/stargazers">
+    <img src="https://img.shields.io/github/stars/francois-smith/VIO-202.svg?style=for-the-badge">
+  </a>  
+  <a href="https://github.com/francois-smith/VIO-202/issues">
+    <img src="https://img.shields.io/github/issues/francois-smith/VIO-202.svg?style=for-the-badge">
+  </a>  
+  <a href="https://github.com/francois-smith/VIO-202/blob/master/LICENSE.txt">
+    <img src="https://img.shields.io/github/license/francois-smith/VIO-202.svg?style=for-the-badge">
+  </a>  
 </p>
 
 <br />
