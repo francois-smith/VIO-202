@@ -1,7 +1,16 @@
 import styled, { keyframes} from "styled-components";
 
-export const StatsContainer = styled.div`
+export const Container = styled.div`
     width: 100vw;
+
+    #sliderItem{
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+`;
+
+export const StatsContainer = styled.div`
     display: flex;
     justify-content: space-between;
 `;

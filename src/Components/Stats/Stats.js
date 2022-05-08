@@ -1,7 +1,9 @@
 import React from 'react';
-import {StatsContainer, PuglasContainer, SwordsContainer, Stat} from './StatsStyles'
+import {Container, StatsContainer, PuglasContainer, SwordsContainer, Stat} from './StatsStyles'
 import SwordImage from '../../Media/Images/Sword.svg';
 import ScabbardImage from '../../Media/Images/Scabbard.svg';
+import { Slider } from '@material-ui/core';
+import { withStyles } from '@material-ui/styles';
 
 const Stats = () => {
     document.addEventListener("DOMContentLoaded", function(event) {
@@ -17,40 +19,68 @@ const Stats = () => {
         document.getElementById("strength-sword").style.transform = "TranslateX("+value5+"px)";
     }
 
-    return (
-        <StatsContainer>
-            <PuglasContainer>
+    const CustomSlider = withStyles({
+        root: {
+            color: "#28a9f0",
+            width: "90%",
+        },
+        track: {
+            height: 5,
+        },
+        thumb: {
+            height: 20,
+            width: 20,
+            backgroundColor: "#28a9f0",
+            border: "none",
+            marginTop: -9,
+            marginLeft: -11,
+            color: "#28a9f0",
+        },
+    })(Slider);
 
-            </PuglasContainer>
-            <SwordsContainer>
-                <Stat>
-                    <span>AGILITY</span>
-                    <img id='agility-sword' className='sword' src={SwordImage}/> 
-                    <img className='scabbard' src={ScabbardImage}/> 
-                </Stat>    
-                <Stat>
-                    <span>STEALTHINESS</span>
-                    <img id='stealth-sword' className='sword' src={SwordImage}/> 
-                    <img className='scabbard' src={ScabbardImage}/> 
-                </Stat>  
-                <Stat>
-                    <span>CHARISMA</span>
-                    <img id='char-sword' className='sword' src={SwordImage}/> 
-                    <img className='scabbard' src={ScabbardImage}/> 
-                </Stat>  
-                <Stat>
-                    <span>INTELLIGENCE</span>
-                    <img id='intel-sword' className='sword' src={SwordImage}/> 
-                    <img className='scabbard' src={ScabbardImage}/> 
-                </Stat>  
-                <Stat>
-                    <span>STRENGTH</span>
-                    <img id='strength-sword' className='sword' src={SwordImage}/> 
-                    <img className='scabbard' src={ScabbardImage}/> 
-                </Stat>   
-            </SwordsContainer>
-            <Slider defaultValue={30} step={10} marks min={10} max={110} disabled />
-        </StatsContainer>
+    return (
+        <Container>
+            <StatsContainer>
+                <PuglasContainer>
+
+                </PuglasContainer>
+                <SwordsContainer>
+                    <Stat>
+                        <span>AGILITY</span>
+                        <img id='agility-sword' className='sword' src={SwordImage}/> 
+                        <img className='scabbard' src={ScabbardImage}/> 
+                    </Stat>    
+                    <Stat>
+                        <span>STEALTHINESS</span>
+                        <img id='stealth-sword' className='sword' src={SwordImage}/> 
+                        <img className='scabbard' src={ScabbardImage}/> 
+                    </Stat>  
+                    <Stat>
+                        <span>CHARISMA</span>
+                        <img id='char-sword' className='sword' src={SwordImage}/> 
+                        <img className='scabbard' src={ScabbardImage}/> 
+                    </Stat>  
+                    <Stat>
+                        <span>INTELLIGENCE</span>
+                        <img id='intel-sword' className='sword' src={SwordImage}/> 
+                        <img className='scabbard' src={ScabbardImage}/> 
+                    </Stat>  
+                    <Stat>
+                        <span>STRENGTH</span>
+                        <img id='strength-sword' className='sword' src={SwordImage}/> 
+                        <img className='scabbard' src={ScabbardImage}/> 
+                    </Stat>   
+                </SwordsContainer>
+            </StatsContainer>
+
+            <CustomSlider id="sliderItem"
+                aria-label="Custom marks"
+                defaultValue={0}
+                step={10}
+                min={0}
+                max={20}
+            />
+        </Container>
     );
 };
 
