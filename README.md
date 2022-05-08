@@ -1,21 +1,33 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+<p align="center">
+  <a href="https://github.com/francois-smith/VIO-202/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/francois-smith/VIO-202.svg?style=for-the-badge">
+  </a>  
+  <a href="https://github.com/francois-smith/VIO-202/network/members">
+    <img src="https://img.shields.io/github/forks/francois-smith/VIO-202.svg?style=for-the-badge">
+  </a>  
+  <a href="https://github.com/francois-smith/VIO-202/stargazers">
+    <img src="https://img.shields.io/github/stars/francois-smith/VIO-202.svg?style=for-the-badge">
+  </a>  
+  <a href="https://github.com/francois-smith/VIO-202/issues">
+    <img src="https://img.shields.io/github/issues/francois-smith/VIO-202.svg?style=for-the-badge">
+  </a>  
+  <a href="https://github.com/francois-smith/VIO-202/blob/master/LICENSE.txt">
+    <img src="https://img.shields.io/github/license/francois-smith/VIO-202.svg?style=for-the-badge">
+  </a>  
+</p>
 
 <br />
 <div align="center">
   <a>
-    <img src="images/logo.png" alt="Logo" width="400">
+    <img src="images/logo.png" alt="Logo" width="600">
   </a>
 
   <h3 align="center">VIO 202 Year Project</h3>
 
   <p align="center">
-    Various projects based on my webcomic: <br/>
+    Various projects based on my webcomic:<br/>
     BETRAYAL - The Way Of The Traitor
   </p>
 </div>
@@ -46,7 +58,7 @@ During first year we were required to make a web comic for our final project. Th
 * The first project was making an interactive trailer that takes the user on a journey and hypes them up for reading the comic
 * The second project will be making an interactive infographic that gives users more info on specific topics and aspects of our comic
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Each project is stored in a branch, to view and download all projects use Github's branch viewer to see respective projects.
 
 
 
@@ -58,7 +70,6 @@ Each of the 4 projects will tackle a different set of tools to achieve the end r
 * [Bootstrap](https://getbootstrap.com)
 * [Adobe Animate](https://www.adobe.com/africa/products/animate.html)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -68,24 +79,16 @@ Each of the 4 projects will tackle a different set of tools to achieve the end r
 - [ ] Theme 3 - Unknown
 - [ ] Theme 4 - Turning Webcomic Into Motion Comic
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
 ## Contact
 
 Francois Smith - contact@francois-smith.com
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -97,18 +100,3 @@ Francois Smith - contact@francois-smith.com
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/francois-smith/VIO-202.svg?style=for-the-badge
-[contributors-url]: https://github.com/francois-smith/VIO-202/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/francois-smith/VIO-202.svg?style=for-the-badge
-[forks-url]: https://github.com/francois-smith/VIO-202/network/members
-[stars-shield]: https://img.shields.io/github/stars/francois-smith/VIO-202.svg?style=for-the-badge
-[stars-url]: https://github.com/francois-smith/VIO-202/stargazers
-[issues-shield]: https://img.shields.io/github/issues/francois-smith/VIO-202.svg?style=for-the-badge
-[issues-url]: https://github.com/francois-smith/VIO-202/issues
-[license-shield]: https://img.shields.io/github/license/francois-smith/VIO-202.svg?style=for-the-badge
-[license-url]: https://github.com/francois-smith/VIO-202/blob/master/LICENSE.txt
-[product-screenshot]: images/screenshot.png
