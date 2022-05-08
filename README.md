@@ -15,7 +15,7 @@
   <h3 align="center">VIO 202 Year Project</h3>
 
   <p align="center">
-    Various projects based on my webcomic: <br/>
+    Various projects based on my webcomic:<br/>
     BETRAYAL - The Way Of The Traitor
   </p>
 </div>
@@ -46,7 +46,7 @@ During first year we were required to make a web comic for our final project. Th
 * The first project was making an interactive trailer that takes the user on a journey and hypes them up for reading the comic
 * The second project will be making an interactive infographic that gives users more info on specific topics and aspects of our comic
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Each project is stored in a branch, to view and download all projects use Github's branch viewer to see respective projects.
 
 
 
@@ -58,7 +58,6 @@ Each of the 4 projects will tackle a different set of tools to achieve the end r
 * [Bootstrap](https://getbootstrap.com)
 * [Adobe Animate](https://www.adobe.com/africa/products/animate.html)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -68,24 +67,16 @@ Each of the 4 projects will tackle a different set of tools to achieve the end r
 - [ ] Theme 3 - Unknown
 - [ ] Theme 4 - Turning Webcomic Into Motion Comic
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
 ## Contact
 
 Francois Smith - contact@francois-smith.com
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
