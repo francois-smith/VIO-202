@@ -12,4 +12,5 @@ export const BackstoryContainer = styled.div`
     width: 90%;
     border: #fff 3px solid;
     height: 900px;
+    
 `;
