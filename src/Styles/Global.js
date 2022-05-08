@@ -24,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
         color: ${props => props.theme.colors.text};
         font-size: 20px;
         font-family:  ${props => props.theme.fonts.main};
-        font-weight: regular;
+        background-image: linear-gradient(180deg, ${props => props.theme.colors.backgroundLight}, ${props => props.theme.colors.backgroundDark});
     }
 `;
 
