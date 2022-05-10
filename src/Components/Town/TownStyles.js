@@ -4,15 +4,18 @@ import styled, { keyframes} from "styled-components";
 
 export const Container = styled.div`
     width: 100.5vw;
-    margin-top: -100px;
+    height: 100vh;
+    margin-top: -50px;
     margin-left: -2px;
     position: relative;
     background-color: #b2d7f4;
+    z-index: 0;
 
     #clouds{
         position: absolute;
         width: 100vw;
         height: 100vh;
+        margin-top: -50px;
     }
     #logo{
         position: absolute;
