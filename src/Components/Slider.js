@@ -47,17 +47,17 @@ export default function RangeSlider() {
 		case 1:
 			adjustSwords(175, 150, 20, 100, 60);
 			puglas.src = PuglasKid;
-			puglas.style = "height: 500px; position: absolute; bottom: 210px; left: 100px;";
+			puglas.style = "height: 375px; position: absolute; bottom: 185px; left: 100px;";
 		break;
 		case 2:
 			adjustSwords(35, -30, -35, 40, -10);
 			puglas.src = PuglasTeen;
-			puglas.style = "height: 500px; position: absolute; bottom: 210px; left: -30px;";
+			puglas.style = "height: 415px; position: absolute; bottom:185px; left: -10px;";
 		break;
 		case 3:
 			adjustSwords(-120, -300, -150, 0, -220);
 			puglas.src = PuglasAdult;
-			puglas.style = "height: 500px; position: absolute; bottom: 210px; left: 40px;";
+			puglas.style = "height: 450px; position: absolute; bottom: 185px; left: 50px;";
 		break;
 		default:
 			adjustSwords(175, 150, 20, 100, 60);

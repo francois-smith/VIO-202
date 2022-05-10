@@ -29,7 +29,7 @@ export const SwordsContainer = styled.div`
     display: flex;
     flex-direction: column;
     perspective: 2000px;
-    margin-top: 1000px;
+    margin-top: 900px;
     margin-left: -20px;
     
     #slider{
@@ -47,14 +47,15 @@ export const Stat = styled.div`
     transform: rotateY(30deg) perspective(200px) rotateX(0deg);
 
     span{
-        font-size: 30px;
+        margin-top: 5px;
+        font-size: 25px;
         color: ${props => props.theme.colors.textLight};
         position: absolute;
         left: 0px;
         padding-left: 20px;
     }
     .sword{
-        height: 120px;
+        height: 100px;
         transform: scaleX(-1.25);
         transition: all 0.35s;
     }
@@ -62,8 +63,8 @@ export const Stat = styled.div`
         position: absolute;
         left: -15px;
         transform: scaleX(-1.25) scale(0.9);
-        height: 40px;
-        top: 33%;
+        height: 32px;
+        top: 34%;
     }
 `;
 
@@ -89,11 +90,11 @@ export const EquipmentSection = styled.div`
     height: 1200px;
     display: flex;
     justify-content: center;
-    margin-top: 400px;
+    margin-top: 200px;
     z-index: 9;
 
     img{
-        width: 1000px;
+        width: 800px;
         z-index: 9;
     }
 `;
@@ -102,9 +103,28 @@ export const MapSection = styled.div`
     display: flex;
     justify-content: center;
     margin-top: -400px;
+    width: 100vw;
+`;
 
-    #mapImage{
+export const MapImage = styled.div`
+    z-index: 10;
+    position: relative;
+
+    img{
         width: 1200px;
         z-index: 10;
+    }
+    #puglasTown{
+        border: 2px solid;
+        width: 100px;
+        height: 60px;
+        position: absolute;
+        top: 75px;
+        right: 55%;
+        transition: all 0.4s;
+    }
+    #puglasTown:hover{
+        width: 200px;
+        height: 120px;
     }
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, EquipmentSection, StatsSection, StatsContainer, SwordsContainer, Stat, PuglasContainer, SectionsContainer, MapSection } from './DungeonStyles';
+import { Container, EquipmentSection, StatsSection, StatsContainer, SwordsContainer, Stat, PuglasContainer, SectionsContainer, MapSection, MapImage } from './DungeonStyles';
 import DungeonImage from '../../Media/Images/Dungeon.svg';
-//import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade';
 import Pedestal from '../../Media/Images/Pedestal.svg';
 import SwordImage from '../../Media/Images/Sword.svg';
 import ScabbardImage from '../../Media/Images/Scabbard.svg';
@@ -56,13 +56,15 @@ const Dungeon = () => {
                     </PuglasContainer>
                 </StatsSection>
                 <EquipmentSection>
-                    <img id='pedestalImage' src={Pedestal}/>
-                    {/* <Fade bottom>
-                        
-                    </Fade> */}
+                    <Fade bottom>
+                        <img id='pedestalImage' src={Pedestal}/>
+                    </Fade>
                 </EquipmentSection>
                 <MapSection>
-                    <img id='mapImage' src={Map}/>
+                    <MapImage>
+                        <img src={Map}/>
+                        <div id='puglasTown'></div>
+                    </MapImage>
                 </MapSection>
             </SectionsContainer>
         </Container>
