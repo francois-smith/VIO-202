@@ -22,7 +22,7 @@ export const StatsSection = styled.div`
 
 export const StatsContainer = styled.div`
     display: flex;
-    width: 1200px;
+    width: 1100px;
 `;
 
 export const SwordsContainer = styled.div`
@@ -33,7 +33,7 @@ export const SwordsContainer = styled.div`
     margin-left: -20px;
     
     #slider{
-        width: 180%;
+        width: 150%;
         transform: rotateY(30deg) perspective(200px) rotateX(0deg);
         margin-left: 50px;
     }
@@ -69,8 +69,8 @@ export const Stat = styled.div`
 
 export const PuglasContainer = styled.div`
     perspective: 2000px;
-    margin-top: 1550px;
-    margin-right: 150px;
+    margin-top: 1400px;
+    margin-right: 200px;
     position: relative;
 
     #puglas{
@@ -80,7 +80,7 @@ export const PuglasContainer = styled.div`
         left: 40px;
     }
     #stand{
-        height: 250px;
+        height: 220px;
     }
 `;
 
@@ -93,7 +93,7 @@ export const EquipmentSection = styled.div`
     z-index: 9;
 
     img{
-        width: 1100px;
+        width: 1000px;
         z-index: 9;
     }
 `;
@@ -104,7 +104,7 @@ export const MapSection = styled.div`
     margin-top: -400px;
 
     #mapImage{
-        width: 1500px;
+        width: 1200px;
         z-index: 10;
     }
 `;
