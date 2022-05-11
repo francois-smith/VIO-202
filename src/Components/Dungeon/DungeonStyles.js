@@ -7,6 +7,8 @@ export const Container = styled.div`
 
     #dungeon{
         z-index: 9999;
+        width: 101vw;
+        margin-left: -0.5vw;
     }
 `;
 
@@ -92,10 +94,50 @@ export const EquipmentSection = styled.div`
     justify-content: center;
     margin-top: 200px;
     z-index: 9;
+    position: relative;
 
-    img{
+    #pedestalImage{
         width: 800px;
         z-index: 9;
+    }
+    #SwordPedastal{
+        position: absolute;
+        bottom: 810px;
+        z-index: 12;
+
+        img{
+            width: 320px;
+        }
+    }
+    #BookPedastal{
+        position: absolute;
+        bottom: 785px;
+        left: 49%;
+        z-index: 12;
+
+        img{
+            width: 100px;
+        }
+    }
+    #TorchPedastal{
+        position: absolute;
+        bottom: 720px;
+        left: 42%;
+        z-index: 12;
+
+        img{
+            width: 100px;
+        }
+    }
+
+    .equipment_item{
+        img{
+            transition: all 0.2s;
+        }
+    }
+
+    .equipment_item:hover img{
+        transform: translateY(-75px) !important;
     }
 `;
 
@@ -127,4 +169,44 @@ export const MapImage = styled.div`
         width: 200px;
         height: 120px;
     }
+`;
+
+export const SideCharactersSection = styled.div`
+    padding-top: 600px;
+    position: relative;
+
+    #bridge{
+        width: 101vw;
+        margin-left: -0.5vw;
+    }
+    #husker{
+        position: absolute;
+        height: 600px;
+        right: 250px;
+        top: 350px;
+    }
+    #owliver{
+        position: absolute;
+        height: 600px;
+        left: 120px;
+        top: 500px;
+    }
+    #husker-torch{
+        position: absolute;
+        height: 150px;
+        right: 350px;
+        top: 170px;
+    }
+    #owliver-torch{
+        position: absolute;
+        height: 150px;
+        left: 300px;
+        top: 320px;
+    }
+`;
+
+export const AboutSection = styled.div`
+    background-color: blue;
+    margin-top: -20px;
+    height: 112vh;
 `;
