@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	adjustSwords(175, 150, 20, 100, 60);
 	let puglas = document.getElementById("puglas");
 	puglas.src = PuglasKid;
-	puglas.style = "height: 500px; position: absolute; bottom: 210px; left: 100px;";
+	puglas.style = "height: 375px; position: absolute; bottom: 185px; left: 100px;";
 });
 
 function adjustSwords(value1, value2, value3, value4, value5){
