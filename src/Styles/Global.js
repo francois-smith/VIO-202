@@ -4,7 +4,10 @@ import { normalize } from "styled-normalize";
 const GlobalStyles = createGlobalStyle`
     ${normalize};
     @import url('https://fonts.googleapis.com/css2?family=Oswald');
-
+    @font-face {
+        font-family: medieval;
+        src: url("../Media/Font/PfefferMediaeval.otf");
+    }
     * {
         margin: 0;
         padding: 0;

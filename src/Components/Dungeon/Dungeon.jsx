@@ -124,7 +124,24 @@ const Dungeon = () => {
                 <MapSection>
                     <MapImage>
                         <img src={Map}/>
+
                         <div id='puglasTown'></div>
+                        <div id='puglasTownInfo'>
+                            <h3>Coldview</h3>
+                            <p>Home of the main character of the story</p>
+                        </div>
+                        
+                        <div id='mainTown'></div>
+                        <div id='mainTownInfo'>
+                            <h3>Aramore</h3>
+                            <p>The location where our adventure begins</p>
+                        </div>
+
+                        <div id='ruins'></div>
+                        <div id='ruinsInfo'>
+                            <h3>Mysterious Ruins</h3>
+                            <p>Ancient ruins that no one dares exploring</p>
+                        </div>
                     </MapImage>
                 </MapSection>
                 <SideCharactersSection>

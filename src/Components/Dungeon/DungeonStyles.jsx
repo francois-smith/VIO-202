@@ -167,17 +167,108 @@ export const MapImage = styled.div`
         z-index: 10;
     }
     #puglasTown{
-        border: 2px solid;
         width: 100px;
         height: 60px;
         position: absolute;
         top: 75px;
         right: 55%;
-        transition: all 0.4s;
     }
-    #puglasTown:hover{
+    #puglasTownInfo{
+        opacity: 0;
+        top: 135px;
+        left: 37.5%;
         width: 200px;
-        height: 120px;
+        height: auto;
+        position: absolute;
+        background-color: #a5815d;
+        border: 3px SOLID #42210b;
+        padding: 10px;
+        color: #ebdad1;
+        font-family: "medieval";
+        transition: all 0.4s;
+
+        h3{
+            font-weight: 400;
+            font-size: 25px;
+            margin-bottom: 6px;
+        }
+        p{
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+    #puglasTown:hover + #puglasTownInfo{
+        opacity: 1;
+    }
+
+    #mainTown{
+        width: 100px;
+        height: 75px;
+        position: absolute;
+        top: 52.5%;
+        left: 8%;
+    }
+    #mainTownInfo{
+        opacity: 0;
+        top: 62.5%;
+        left: 8%;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        background-color: #a5815d;
+        border: 3px SOLID #42210b;
+        padding: 10px;
+        color: #ebdad1;
+        font-family: "medieval";
+        transition: all 0.4s;
+
+        h3{
+            font-weight: 400;
+            font-size: 25px;
+            margin-bottom: 6px;
+        }
+        p{
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+    #mainTown:hover + #mainTownInfo{
+        opacity: 1;
+    }
+
+    #ruins{
+        width: 80px;
+        height: 60px;
+        position: absolute;
+        top: 79%;
+        left: 51%;
+    }
+    #ruinsInfo{
+        opacity: 0;
+        top: 65%;
+        left: 51%;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        background-color: #a5815d;
+        border: 3px SOLID #42210b;
+        padding: 10px;
+        color: #ebdad1;
+        font-family: "medieval";
+        transition: all 0.4s;
+
+        h3{
+            font-weight: 400;
+            font-size: 23px;
+            margin-bottom: 6px;
+        }
+        p{
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+    #ruins:hover + #ruinsInfo{
+        opacity: 1;
     }
 `;
 
