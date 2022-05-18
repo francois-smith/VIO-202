@@ -106,9 +106,24 @@ export const EquipmentSection = styled.div`
     z-index: 9;
     position: relative;
 
-    #pedestalImage{
-        width: 800px;
-        z-index: 9;
+    
+    #pedestal-container{
+        margin-top: 320px;
+        perspective: 2000px;
+
+        #equipment-info{
+            position: absolute;
+            top: 220px;
+            left: 20px;
+            color: ${props => props.theme.colors.textLight};
+            transform: rotateX(-15deg) rotateY(-26deg) rotateZ(11deg) perspective(600px) ;
+            font-size: 40px;
+            font-family: "medieval";
+        }
+        #pedestalImage{
+            width: 800px;
+            z-index: 9;
+        }
     }
     #SwordPedastal{
         position: absolute;
@@ -279,6 +294,7 @@ export const SideCharactersSection = styled.div`
     #bridge{
         width: 101vw;
         margin-left: -0.5vw;
+        position: relative;
     }
     #husker{
         position: absolute;
@@ -306,8 +322,57 @@ export const SideCharactersSection = styled.div`
     }
 `;
 
+export const moveInLeft = keyframes`
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+`
+
+
 export const AboutSection = styled.div`
-    background-color: blue;
+    position: relative;
+    background-color: #131313 !important;
     margin-top: -20px;
-    height: 112vh;
+    height: 125vh;
+    z-index: 1000;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    color: ${props => props.theme.colors.textLight};
+
+    #terminal{
+        position: absolute;
+        bottom: 50px;
+        width: 75vw;
+    }
+    #terminal-intro{
+        position: absolute;
+        top: 45px;
+        left: 15px;
+    }
+    #terminal-icon{
+        position: absolute;
+        top: 60px;
+        left: 15px;
+        font-size: 40px;
+        animation: ${moveInLeft} 0.8s infinite;
+    }
+    #terminal-hint{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+    #terminal-input{
+        position: absolute;
+        top: 75px;
+        left: 35px;
+    }
 `;
+

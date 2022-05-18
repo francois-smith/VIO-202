@@ -25,6 +25,7 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        filter: drop-shadow(4px 4px 3px #202020);
 
         img{
             width: 800px;
