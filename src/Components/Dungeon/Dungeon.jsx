@@ -19,6 +19,7 @@ import TorchRightOff from '../../Media/Images/TorchRight_Off.svg';
 import TorchRightOn from '../../Media/Images/TorchRight_On.svg';
 import Husker from '../../Media/Images/Husker.svg';
 import Owliver from '../../Media/Images/Owliver.svg';
+import StatsHeader from '../../Media/Images/StatsHeader.svg';
 
 const Dungeon = () => {
         function MouseOver(event) {
@@ -66,47 +67,50 @@ const Dungeon = () => {
             </Parallax>
             <SectionsContainer>
                 <StatsSection>
-                    <StatsContainer>
-                        <SwordsContainer>
-                            <Stat>
-                                <span>AGILITY</span>
-                                <img id='agility-sword' className='sword' src={SwordImage}/> 
-                                <img className='scabbard' src={ScabbardImage}/> 
-                            </Stat>    
-                            <Stat>
-                                <span>STEALTHINESS</span>
-                                <img id='stealth-sword' className='sword' src={SwordImage}/> 
-                                <img className='scabbard' src={ScabbardImage}/> 
-                            </Stat>  
-                            <Stat>
-                                <span>CHARISMA</span>
-                                <img id='char-sword' className='sword' src={SwordImage}/> 
-                                <img className='scabbard' src={ScabbardImage}/> 
-                            </Stat>  
-                            <Stat>
-                                <span>INTELLIGENCE</span>
-                                <img id='intel-sword' className='sword' src={SwordImage}/> 
-                                <img className='scabbard' src={ScabbardImage}/> 
-                            </Stat>  
-                            <Stat>
-                                <span>STRENGTH</span>
-                                <img id='strength-sword' className='sword' src={SwordImage}/> 
-                                <img className='scabbard' src={ScabbardImage}/> 
-                            </Stat>  
-                            <Stat id="slider">
-                                <RangeSlider/>
-                            </Stat> 
-                        </SwordsContainer>
-                    </StatsContainer>
-                    <PuglasContainer>
-                        <img id="stand" src={Stand}/>
-                        <img id='puglas'/>
-                    </PuglasContainer>
+                    <img id='stats-header' src={StatsHeader}/> 
+                    <div id="statsTemp">
+                        <StatsContainer>
+                            <SwordsContainer>
+                                <Stat>
+                                    <span>AGILITY</span>
+                                    <img id='agility-sword' className='sword' src={SwordImage}/> 
+                                    <img className='scabbard' src={ScabbardImage}/> 
+                                </Stat>    
+                                <Stat>
+                                    <span>STEALTHINESS</span>
+                                    <img id='stealth-sword' className='sword' src={SwordImage}/> 
+                                    <img className='scabbard' src={ScabbardImage}/> 
+                                </Stat>  
+                                <Stat>
+                                    <span>CHARISMA</span>
+                                    <img id='char-sword' className='sword' src={SwordImage}/> 
+                                    <img className='scabbard' src={ScabbardImage}/> 
+                                </Stat>  
+                                <Stat>
+                                    <span>INTELLIGENCE</span>
+                                    <img id='intel-sword' className='sword' src={SwordImage}/> 
+                                    <img className='scabbard' src={ScabbardImage}/> 
+                                </Stat>  
+                                <Stat>
+                                    <span>STRENGTH</span>
+                                    <img id='strength-sword' className='sword' src={SwordImage}/> 
+                                    <img className='scabbard' src={ScabbardImage}/> 
+                                </Stat>  
+                                <Stat id="slider">
+                                    <RangeSlider/>
+                                </Stat> 
+                            </SwordsContainer>
+                        </StatsContainer>
+                        <PuglasContainer>
+                            <img id="stand" src={Stand}/>
+                            <img id='puglas'/>
+                        </PuglasContainer>
+                    </div>
                 </StatsSection>
                 <EquipmentSection>
                     <Fade bottom>
                         <img id='pedestalImage' src={Pedestal}/>
-                        <div  id='SwordPedastal' className='equipment_item'>
+                        <div id='SwordPedastal' className='equipment_item'>
                             <img src={SwordPedastal}/>
                         </div>
                         <div id='TorchPedastal' className='equipment_item'>

@@ -15,23 +15,33 @@ export const Container = styled.div`
 export const SectionsContainer = styled.div`
     position: absolute;
     top: -200px;
+
+    #stats-header{
+        width: 450px;
+        margin-left: 25px;
+        margin-bottom: 50px;
+    }
 `;
 
 export const StatsSection = styled.div`
-    display: flex;
-    justify-content: space-between;
+    margin-top: 900px;
+    flex-direction: column;
+
+    #statsTemp{
+        display: flex;
+        justify-content: space-between;
+    }
 `;
 
 export const StatsContainer = styled.div`
     display: flex;
-    width: 1100px;
+    width: 1000px;
 `;
 
 export const SwordsContainer = styled.div`
     display: flex;
     flex-direction: column;
     perspective: 2000px;
-    margin-top: 900px;
     margin-left: -20px;
     
     #slider{
@@ -57,7 +67,7 @@ export const Stat = styled.div`
         padding-left: 20px;
     }
     .sword{
-        height: 100px;
+        height: 110px;
         transform: scaleX(-1.25);
         transition: all 0.35s;
     }
@@ -65,19 +75,19 @@ export const Stat = styled.div`
         position: absolute;
         left: -15px;
         transform: scaleX(-1.25) scale(0.9);
-        height: 32px;
+        height: 34px;
         top: 34%;
     }
 `;
 
 export const PuglasContainer = styled.div`
     perspective: 2000px;
-    margin-top: 1400px;
-    margin-right: 200px;
+    margin-top: 500px;
+    margin-right: 500px;
     position: relative;
 
     #puglas{
-        height: 500px;
+        height: 750px;
         position: absolute;
         bottom: 210px;
         left: 40px;
