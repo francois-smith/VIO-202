@@ -1,5 +1,6 @@
 import { style } from "@material-ui/system";
 import styled, { keyframes} from "styled-components";
+import Thumb from '../../Media/Images/Thumb.svg';
 
 export const Container = styled.div`
     margin-top: 120px;
@@ -9,6 +10,32 @@ export const Container = styled.div`
         z-index: 9999;
         width: 101vw;
         margin-left: -0.5vw;
+    }
+    .MuiSlider-thumb{
+        background-image: url(${Thumb}) !important;
+        background-repeat:no-repeat;
+        background-position: center; 
+    }
+    .MuiSlider-thumb {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 0% !important;
+        margin-top: -30px !important;
+        margin-left: -20px !important;
+        background-color: rgba(255, 255, 255, 0) !important;
+        color: rgba(255, 255, 255, 0) !important;
+    }
+    .MuiSlider-thumb.Mui-focusVisible, .MuiSlider-thumb:hover{
+        box-shadow: none;
+    }
+    .MuiSlider-rail {
+        opacity: 0.9 !important;
+        height: 4px !important;
+        width: 101% !important; 
+    }
+    .MuiSlider-mark {
+        width: 0px !important;
+        height: 0px !important;
     }
 `;
 

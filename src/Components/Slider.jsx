@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Slider } from "@material-ui/core";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 import PuglasKid from '../Media/Images/Puglas_Kid.svg';
 import PuglasTeen from '../Media/Images/Puglas_Teen.svg';
 import PuglasAdult from '../Media/Images/Puglas_Adult.svg';
