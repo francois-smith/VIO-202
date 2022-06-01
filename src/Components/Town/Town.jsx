@@ -14,7 +14,7 @@ const Town = () => {
             <Parallax translateY={[-10, 20]}>
                 <img id="town" src={TownImage}/>;
             </Parallax>
-            <Parallax id="logo" translateY={0} translateX={[-50, 25]} speed={200}>
+            <Parallax id="logo" translateY={0} translateX={[-40, 25]} speed={200}>
                 <img src={Logo}/>;
             </Parallax>
         </Container>

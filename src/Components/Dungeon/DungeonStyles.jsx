@@ -1,8 +1,8 @@
-import { style } from "@material-ui/system";
 import styled, { keyframes} from "styled-components";
 import Thumb from '../../Media/Images/Thumb.svg';
 
 export const Container = styled.div`
+    @import url('https://fonts.googleapis.com/css2?family=Oswald');
     margin-top: 120px;
     position: relative;
 
@@ -10,6 +10,10 @@ export const Container = styled.div`
         z-index: 9999;
         width: 101vw;
         margin-left: -0.5vw;
+    }
+    #map-container-image{
+        position: relative;
+        z-index: 999;
     }
     .MuiSlider-thumb{
         background-image: url(${Thumb}) !important;
@@ -37,6 +41,9 @@ export const Container = styled.div`
         width: 0px !important;
         height: 0px !important;
     }
+    .MuiSlider-markLabel {
+        font-family: "medieval", serif !important;
+    }
 `;
 
 export const SectionsContainer = styled.div`
@@ -62,7 +69,7 @@ export const StatsSection = styled.div`
 
 export const StatsContainer = styled.div`
     display: flex;
-    width: 1000px;
+    width: 950px;
 `;
 
 export const SwordsContainer = styled.div`
@@ -101,7 +108,7 @@ export const Stat = styled.div`
     .scabbard{
         position: absolute;
         left: -15px;
-        transform: scaleX(-1.25) scale(0.9);
+        transform: scaleX(-1.5) scale(0.9);
         height: 34px;
         top: 34%;
     }
@@ -113,11 +120,25 @@ export const PuglasContainer = styled.div`
     margin-right: 500px;
     position: relative;
 
-    #puglas{
-        height: 750px;
+    .puglasAdult{
+        height: 525px;
         position: absolute;
-        bottom: 210px;
-        left: 40px;
+        bottom: 185px;
+        left: 25px;
+        opacity: 0;
+    }
+    .puglasTeen{
+        height: 475px; 
+        position: absolute; 
+        bottom: 185px; 
+        left: -50px;
+        opacity: 0;
+    }
+    .puglasKid{
+        height: 425px;
+        position: absolute;
+        bottom: 185px;
+        left: 20px;
     }
     #stand{
         height: 220px;
@@ -200,9 +221,181 @@ export const MapSection = styled.div`
     width: 100vw;
 `;
 
+export const Bounce = keyframes`
+    0% {
+        transform: translateY(0px);
+    }
+    65% {
+        transform: translateY(-4px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+`
+
 export const MapImage = styled.div`
     z-index: 10;
     position: relative;
+
+    #pin1{
+        position: absolute;
+        width: 20px;
+        top: 45%;
+        left: 48%;
+        animation: ${Bounce} 1.5s infinite;
+    }
+    #pin1Info{
+        opacity: 0;
+        top: 49%;
+        left: 48%;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        background-color: #a5815d;
+        border: 3px solid #42210b;
+        padding: 10px;
+        color: #ebdad1;
+        font-family: "medieval";
+        transition: all 0.4s;
+        p{
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+    #pin1:hover{
+        animation-play-state: paused;
+    }
+    #pin1:hover + #pin1Info{
+        opacity: 1;
+    }
+
+    #pin2{
+        position: absolute;
+        width: 20px;
+        bottom: 20%;
+        left: 18%;
+        animation: ${Bounce} 1.5s infinite;
+    }
+    #pin2Info{
+        opacity: 0;
+        bottom: 8%;
+        left: 18%;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        background-color: #a5815d;
+        border: 3px solid #42210b;
+        padding: 10px;
+        color: #ebdad1;
+        font-family: "medieval";
+        transition: all 0.4s;
+        p{
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+    #pin2:hover{
+        animation-play-state: paused;
+    }
+    #pin2:hover + #pin2Info{
+        opacity: 1;
+    }
+
+    #pin3{
+        position: absolute;
+        width: 20px;
+        bottom: 25%;
+        left: 30%;
+        animation: ${Bounce} 1.5s 0.7s infinite;
+    }
+    #pin3Info{
+        opacity: 0;
+        bottom: 30%;
+        left: 30%;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        background-color: #a5815d;
+        border: 3px solid #42210b;
+        padding: 10px;
+        color: #ebdad1;
+        font-family: "medieval";
+        transition: all 0.4s;
+        p{
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+    #pin3:hover{
+        animation-play-state: paused;
+    }
+    #pin3:hover + #pin3Info{
+        opacity: 1;
+    }
+
+    #pin4{
+        position: absolute;
+        width: 20px;
+        top: 30%;
+        left: 30%;
+        animation: ${Bounce} 1.5s 0.05s infinite;
+    }
+    #pin4Info{
+        opacity: 0;
+        top: 34%;
+        left: 30%;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        background-color: #a5815d;
+        border: 3px solid #42210b;
+        padding: 10px;
+        color: #ebdad1;
+        font-family: "medieval";
+        transition: all 0.4s;
+        p{
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+    #pin4:hover{
+        animation-play-state: paused;
+    }
+    #pin4:hover + #pin4Info{
+        opacity: 1;
+    }
+
+    #pin5{
+        position: absolute;
+        width: 20px;
+        top: 10%;
+        left: 15%;
+        animation: ${Bounce} 1.5s 0.2s infinite;
+    }
+    #pin5Info{
+        opacity: 0;
+        top: 14%;
+        left: 15%;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        background-color: #a5815d;
+        border: 3px solid #42210b;
+        padding: 10px;
+        color: #ebdad1;
+        font-family: "medieval";
+        transition: all 0.4s;
+        p{
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+    #pin5:hover{
+        animation-play-state: paused;
+    }
+    #pin5:hover + #pin5Info{
+        opacity: 1;
+    }
 
     img{
         width: 1200px;
@@ -317,6 +510,7 @@ export const MapImage = styled.div`
 export const SideCharactersSection = styled.div`
     padding-top: 600px;
     position: relative;
+    perspective: 2000px;
 
     #bridge{
         width: 101vw;
@@ -326,7 +520,7 @@ export const SideCharactersSection = styled.div`
     #husker{
         position: absolute;
         height: 600px;
-        right: 250px;
+        right: 350px;
         top: 350px;
     }
     #owliver{
@@ -338,14 +532,59 @@ export const SideCharactersSection = styled.div`
     #husker-torch{
         position: absolute;
         height: 150px;
-        right: 350px;
+        right: 450px;
         top: 170px;
+    }
+    #husker-torch-flame{
+        position: absolute;
+        height: 175px;
+        right: 470px;
+        top: 35px;
+    }
+    #owliver-torch-flame{
+        position: absolute;
+        height: 175px;
+        left: 320px;
+        top: 180px
     }
     #owliver-torch{
         position: absolute;
         height: 150px;
         left: 300px;
         top: 320px;
+    }
+    #huskerInfo{
+        position: absolute;
+        right: 400px;
+        top: 950px;
+        color: #fff;
+        transform: rotateX(40deg) rotateY(0deg) rotateZ(-14deg);
+        transition: all 0.2s;
+        opacity: 0;
+
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 27px;
+        }
+    }
+
+    #owliverInfo{
+        position: absolute;
+        left: 275px;
+        top: 1100px;
+        color: #fff;
+        transform: rotateX(40deg) rotateY(8deg) rotateZ(-18deg);
+        transition: all 0.2s;
+        opacity: 0;
+
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 27px;
+        }
     }
 `;
 

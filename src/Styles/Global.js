@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
+import '../Media/Font/PfefferMediaeval.otf';
 
 const GlobalStyles = createGlobalStyle`
     ${normalize};
@@ -12,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "medieval";
     }
 
     html {

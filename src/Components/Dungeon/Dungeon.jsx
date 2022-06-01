@@ -1,4 +1,4 @@
-import { createRef, useCallback, useEffect, useState, React } from 'react';
+import React from 'react';
 import { Container, EquipmentSection, StatsSection, StatsContainer, SwordsContainer, Stat, PuglasContainer, SectionsContainer, MapSection, MapImage, SideCharactersSection, AboutSection } from './DungeonStyles';
 import DungeonImage from '../../Media/Images/Dungeon.svg';
 import Fade from 'react-reveal/Fade';
@@ -13,58 +13,65 @@ import RangeSlider from '../Slider';
 import { Parallax } from 'react-scroll-parallax';
 import Map from '../../Media/Images/Map.svg';
 import Bridge from '../../Media/Images/Bridge.svg';
-import TorchLeftOff from '../../Media/Images/TorchLeft_Off.svg';
-import TorchLeftOn from '../../Media/Images/TorchLeft_On.svg';
-import TorchRightOff from '../../Media/Images/TorchRight_Off.svg';
-import TorchRightOn from '../../Media/Images/TorchRight_On.svg';
+import TorchLeft from '../../Media/Images/TorchLeft_Off.svg';
+import TorchRight from '../../Media/Images/TorchRight_Off.svg';
+import TorchFlame from '../../Media/Images/TorchFlame.gif';
 import Husker from '../../Media/Images/Husker.svg';
 import Owliver from '../../Media/Images/Owliver.svg';
 import StatsHeader from '../../Media/Images/StatsHeader.svg';
 import Terminal from '../../Media/Images/Terminal.svg';
+import Thumb2 from '../../Media/Images/Thumb2.svg';
+import Rive from 'rive-react';
+import PuglasAdult from '../../Media/Animations/puglas_adult.riv';
+import PuglasTeen from '../../Media/Animations/puglas_teen.riv';
+import PuglasKid from '../../Media/Animations/puglas_kid.riv';
 
 const Dungeon = () => {
         function MouseOver(event) {
-            let torch;
-
             switch(event.target.id){
                 case "owliver":
-                    torch = document.getElementById("owliver-torch");
-                    torch.src = TorchLeftOn;
-                    torch.style.height = "260px";
-                    torch.style.top = "210px";
+                    document.getElementById("owliverInfo").style.opacity = "1";
                 break;
                 case "husker":
-                    torch = document.getElementById("husker-torch");
-                    torch.src = TorchRightOn;
-                    torch.style.height = "260px";
-                    torch.style.top = "60px";
+                    document.getElementById("huskerInfo").style.opacity = "1";
                 break;
             }
         }
 
         function MouseOut(event) {
-            let torch;
-
             switch(event.target.id){
                 case "owliver":
-                    torch = document.getElementById("owliver-torch");
-                    torch.src = TorchLeftOff;
-                    torch.style.height = "150px";
-                    torch.style.top = "320px";
+                    document.getElementById("owliverInfo").style.opacity = "0";
                 break;
                 case "husker":
-                    torch = document.getElementById("husker-torch");
-                    torch.src = TorchRightOff;
-                    torch.style.height = "150px";
-                    torch.style.top = "170px";
+                    document.getElementById("huskerInfo").style.opacity = "0";
                 break;
             }
         }
         
         function EquipmentHover(event) {
             let infoTitle = document.getElementById("equipment-info").querySelector("span");
+            let parent = event.target.parentElement;
 
             switch(event.target.id){
+                case "SwordPedastal":
+                    infoTitle.innerHTML = "Iron Sword";
+                    infoTitle.parentElement.style.left = "30px";
+                    infoTitle.parentElement.style.top = "220px";
+                break;
+                case "TorchPedastal":
+                    infoTitle.innerHTML = "Wooden Torch";
+                    infoTitle.parentElement.style.left = "25px";
+                    infoTitle.parentElement.style.top = "225px";
+                break;
+                case "BookPedastal":
+                    infoTitle.innerHTML = "Mysterious Journal";
+                    infoTitle.parentElement.style.left = "22px";
+                    infoTitle.parentElement.style.top = "235px";
+                break;
+            }
+
+            switch(parent.id){
                 case "SwordPedastal":
                     infoTitle.innerHTML = "Iron Sword";
                     infoTitle.parentElement.style.left = "30px";
@@ -92,7 +99,7 @@ const Dungeon = () => {
 
         let index = 0;
         function terminalToggle(event){
-            let options = ["Who am I?", "What are my hobbies?", "What is my favourite food?", "What is my favorite game?", "What inspired Betrayal?", "What degree do you study?"];
+            let options = ["Who am I?", "What are my hobbies?", "What is my favourite food?", "What is my favorite game?", "What inspired Betrayal?"];
 
             switch(event.key){
                 case "ArrowRight":
@@ -169,9 +176,11 @@ const Dungeon = () => {
                                 </Stat> 
                             </SwordsContainer>
                         </StatsContainer>
-                        <PuglasContainer>
+                        <PuglasContainer id="puglasContainer">
                             <img id="stand" src={Stand}/>
-                            <img id='puglas'/>
+                            <Rive src={PuglasAdult} className='puglasAdult'/>
+                            <Rive src={PuglasTeen} className='puglasTeen'/>
+                            <Rive src={PuglasKid} className='puglasKid'/>
                         </PuglasContainer>
                     </div>
                 </StatsSection>
@@ -193,37 +202,73 @@ const Dungeon = () => {
                             <img src={BookPedastal}/>
                         </div>
                     </Fade>
-                    
                 </EquipmentSection>
-                <MapSection>
-                    <MapImage>
-                        <img src={Map}/>
+                <Parallax id="map-container-image" translateY={[0, -30]}>
+                    <MapSection>
+                        <MapImage>
+                            <img src={Map}/>
 
-                        <div id='puglasTown'></div>
-                        <div id='puglasTownInfo'>
-                            <h3>Coldview</h3>
-                            <p>Home of the main character of the story</p>
-                        </div>
-                        
-                        <div id='mainTown'></div>
-                        <div id='mainTownInfo'>
-                            <h3>Aramore</h3>
-                            <p>The location where our adventure begins</p>
-                        </div>
+                            <div id='puglasTown'></div>
+                            <div id='puglasTownInfo'>
+                                <h3>Coldview</h3>
+                                <p>Home of the main character of the story</p>
+                            </div>
+                            
+                            <div id='mainTown'></div>
+                            <div id='mainTownInfo'>
+                                <h3>Aramore</h3>
+                                <p>The location where our adventure begins</p>
+                            </div>
 
-                        <div id='ruins'></div>
-                        <div id='ruinsInfo'>
-                            <h3>Mysterious Ruins</h3>
-                            <p>Ancient ruins that no one dares exploring</p>
-                        </div>
-                    </MapImage>
-                </MapSection>
+                            <div id='ruins'></div>
+                            <div id='ruinsInfo'>
+                                <h3>Mysterious Ruins</h3>
+                                <p>Ancient ruins that no one dares exploring</p>
+                            </div>
+
+                            <img src={Thumb2} id="pin1"/>
+                            <div id='pin1Info'>
+                                <p>The shoreline route is easy to traverse but inhabits many bandits</p>
+                            </div>
+
+                            <img src={Thumb2} id="pin2"/>
+                            <div id='pin2Info'>
+                                <p>Legend says that an ancient wizzard lives in this forest</p>
+                            </div>
+
+                            <img src={Thumb2} id="pin3"/>
+                            <div id='pin3Info'>
+                                <p>Crossroads where many who travel to the ruins never return</p>
+                            </div>
+
+                            <img src={Thumb2} id="pin4"/>
+                            <div id='pin4Info'>
+                                <p>Mountain route that is hard to traverse but provides much safer travelling</p>
+                            </div>
+
+                            <img src={Thumb2} id="pin5"/>
+                            <div id='pin5Info'>
+                                <p>Frozen tundras where few people travel , let alone live</p>
+                            </div>
+                        </MapImage>
+                    </MapSection>
+                </Parallax>
                 <SideCharactersSection>
                     <img id="bridge" src={Bridge}/>
                     <img onMouseEnter={MouseOver} onMouseLeave={MouseOut} id="husker" src={Husker}/>
                     <img onMouseEnter={MouseOver} onMouseLeave={MouseOut} id="owliver" src={Owliver}/>
-                    <img id="husker-torch" src={TorchRightOff}/>
-                    <img id="owliver-torch" src={TorchLeftOff}/>
+                    <img id="husker-torch-flame" src={TorchFlame}/>
+                    <img id="husker-torch" src={TorchRight}/>
+                    <img id="owliver-torch-flame" src={TorchFlame}/>
+                    <img id="owliver-torch" src={TorchLeft}/>
+                    <div id="huskerInfo">
+                        <h2>Husker</h2>
+                        <p>Age: 34 Years</p>
+                    </div>
+                    <div id="owliverInfo">
+                        <h2>Owliver</h2>
+                        <p>Age: 456 Years</p>
+                    </div>
                 </SideCharactersSection>
                 <AboutSection tabIndex="0" onKeyDown={terminalToggle}>
                     <div id="terminal">
