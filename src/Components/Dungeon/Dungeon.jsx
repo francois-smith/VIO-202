@@ -17,6 +17,8 @@ import TorchLeft from '../../Media/Images/TorchLeft_Off.svg';
 import TorchRight from '../../Media/Images/TorchRight_Off.svg';
 import TorchFlame from '../../Media/Images/TorchFlame.gif';
 import Husker from '../../Media/Images/Husker.svg';
+import HuskerHourglass from '../../Media/Images/Hourglass_Husker.svg';
+import OwliverHourglass from '../../Media/Images/Hourglass_Oliver.svg';
 import Owliver from '../../Media/Images/Owliver.svg';
 import StatsHeader from '../../Media/Images/StatsHeader.svg';
 import Terminal from '../../Media/Images/Terminal.svg';
@@ -99,7 +101,7 @@ const Dungeon = () => {
 
         let index = 0;
         function terminalToggle(event){
-            let options = ["Who am I?", "What are my hobbies?", "What is my favourite food?", "What is my favorite game?", "What inspired Betrayal?"];
+            let options = ["Who am I?", "What are my hobbies?", "What is my favourite food?", "What is my favorite game?", "What do I use to create the comic?"];
 
             switch(event.key){
                 case "ArrowRight":
@@ -113,7 +115,7 @@ const Dungeon = () => {
 
         function previous(options){
             if(index == 0){
-                index = 5;
+                index = 4;
             }
             else{
                 index--;
@@ -124,7 +126,7 @@ const Dungeon = () => {
         }
 
         function next(options){
-            if(index == 5){
+            if(index == 4){
                 index = 0;
             }
             else{
@@ -233,7 +235,7 @@ const Dungeon = () => {
 
                             <img src={Thumb2} id="pin2"/>
                             <div id='pin2Info'>
-                                <p>Legend says that an ancient wizzard lives in this forest</p>
+                                <p>Legend says that an ancient wizard lives in this forest</p>
                             </div>
 
                             <img src={Thumb2} id="pin3"/>
@@ -256,7 +258,9 @@ const Dungeon = () => {
                 <SideCharactersSection>
                     <img id="bridge" src={Bridge}/>
                     <img onMouseEnter={MouseOver} onMouseLeave={MouseOut} id="husker" src={Husker}/>
+                    <img id="husker-hourglass" src={HuskerHourglass}/>
                     <img onMouseEnter={MouseOver} onMouseLeave={MouseOut} id="owliver" src={Owliver}/>
+                    <img id="owliver-hourglass" src={OwliverHourglass}/>
                     <img id="husker-torch-flame" src={TorchFlame}/>
                     <img id="husker-torch" src={TorchRight}/>
                     <img id="owliver-torch-flame" src={TorchFlame}/>
@@ -274,6 +278,9 @@ const Dungeon = () => {
                     <div id="terminal">
                         <img src={Terminal}/>
                         <span id="terminal-intro">What do you want to know about me?</span>
+                        <div id="terminal-website"  onClick={()=> window.open("https://francois-smith.com", "_blank")}></div>
+                        <div id="terminal-github"  onClick={()=> window.open("https://github.com/francois-smith", "_blank")}></div>
+                        <div id="terminal-instagram"  onClick={()=> window.open("https://instagram.com/_francois.smith_", "_blank")}></div>
                         <span id="terminal-icon">&#8250;</span>
                         <span id="terminal-hint">Hint: Use Left and Right Arrow Keys</span>
                         <span id="terminal-input">Who am I?</span>

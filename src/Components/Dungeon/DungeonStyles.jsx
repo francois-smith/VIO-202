@@ -507,6 +507,14 @@ export const MapImage = styled.div`
     }
 `;
 
+export const Shake = keyframes`
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+`;
+
 export const SideCharactersSection = styled.div`
     padding-top: 600px;
     position: relative;
@@ -523,11 +531,33 @@ export const SideCharactersSection = styled.div`
         right: 350px;
         top: 350px;
     }
+    #husker:hover + #husker-hourglass{
+        top: 760px;
+        animation: ${Shake} 0.4s infinite;
+    }
+    #husker-hourglass{
+        position: absolute;
+        height: 140px;
+        right: 650px;
+        top: 800px;
+        transition: all 0.35s;
+    }
     #owliver{
         position: absolute;
         height: 600px;
-        left: 120px;
+        left: 200px;
         top: 500px;
+    }
+    #owliver:hover + #owliver-hourglass{
+        top: 910px;
+        animation: ${Shake} 0.4s infinite;
+    }
+    #owliver-hourglass{
+        position: absolute;
+        height: 140px;
+        left: 125px;
+        top: 950px;
+        transition: all 0.35s;
     }
     #husker-torch{
         position: absolute;
@@ -620,12 +650,12 @@ export const AboutSection = styled.div`
     }
     #terminal-intro{
         position: absolute;
-        top: 45px;
+        top: 54px;
         left: 15px;
     }
     #terminal-icon{
         position: absolute;
-        top: 60px;
+        top: 68px;
         left: 15px;
         font-size: 40px;
         animation: ${moveInLeft} 0.8s infinite;
@@ -637,8 +667,32 @@ export const AboutSection = styled.div`
     }
     #terminal-input{
         position: absolute;
-        top: 75px;
+        top: 84px;
         left: 35px;
+    }
+    #terminal-website{
+        position: absolute;
+        top: 5px;
+        height: 40px;
+        width: 40px;
+        right: 92px;
+        cursor: pointer;
+    }
+    #terminal-github{
+        position: absolute;
+        top: 5px;
+        height: 40px;
+        width: 40px;
+        right: 48px;
+        cursor: pointer;
+    }
+    #terminal-instagram{
+        position: absolute;
+        top: 5px;
+        height: 40px;
+        width: 40px;
+        right: 6px;
+        cursor: pointer;
     }
 `;
 
