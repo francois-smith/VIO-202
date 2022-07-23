@@ -75,8 +75,8 @@ Each of the 4 projects will tackle a different set of tools to achieve the end r
 ## Roadmap
 
 - [x] Theme 1 - Interactive Trailer
-- [ ] Theme 2 - Interactive Infographic
-- [ ] Theme 3 - Unknown
+- [x] Theme 2 - Interactive Infographic
+- [ ] Theme 3 - Planning Phase For Motion Comic
 - [ ] Theme 4 - Turning Webcomic Into Motion Comic
 
 <!-- LICENSE -->
