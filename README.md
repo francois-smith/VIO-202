@@ -1,102 +1,70 @@
-<div id="top"></div>
+# Getting Started with Create React App
 
-<p align="center">
-  <a href="https://github.com/francois-smith/VIO-202/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/francois-smith/VIO-202.svg?style=for-the-badge">
-  </a>  
-  <a href="https://github.com/francois-smith/VIO-202/network/members">
-    <img src="https://img.shields.io/github/forks/francois-smith/VIO-202.svg?style=for-the-badge">
-  </a>  
-  <a href="https://github.com/francois-smith/VIO-202/stargazers">
-    <img src="https://img.shields.io/github/stars/francois-smith/VIO-202.svg?style=for-the-badge">
-  </a>  
-  <a href="https://github.com/francois-smith/VIO-202/issues">
-    <img src="https://img.shields.io/github/issues/francois-smith/VIO-202.svg?style=for-the-badge">
-  </a>  
-  <a href="https://github.com/francois-smith/VIO-202/blob/master/LICENSE.txt">
-    <img src="https://img.shields.io/github/license/francois-smith/VIO-202.svg?style=for-the-badge">
-  </a>  
-</p>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<br />
-<div align="center">
-  <a>
-    <img src="images/logo.png" alt="Logo" width="600">
-  </a>
+## Available Scripts
 
-  <h3 align="center">VIO 202 Year Project</h3>
+In the project directory, you can run:
 
-  <p align="center">
-    Various projects based on my webcomic:<br/>
-    BETRAYAL - The Way Of The Traitor
-  </p>
-</div>
+### `yarn start`
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `yarn test`
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `yarn build`
 
-During first year we were required to make a web comic for our final project. The goal of this year is to take our comics and build interactive experiences from the material.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* The first project was making an interactive trailer that takes the user on a journey and hypes them up for reading the comic
-* The second project will be making an interactive infographic that gives users more info on specific topics and aspects of our comic
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Each project is stored in a branch, to view and download all projects use Github's branch viewer to see respective projects.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `yarn eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Built With
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Each of the 4 projects will tackle a different set of tools to achieve the end result, here are some of the tools I have used to achieve results
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-* [React.js](https://reactjs.org/)
-* [Bootstrap](https://getbootstrap.com)
-* [Adobe Animate](https://www.adobe.com/africa/products/animate.html)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
-<!-- ROADMAP -->
-## Roadmap
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- [x] Theme 1 - Interactive Trailer
-- [x] Theme 2 - Interactive Infographic
-- [ ] Theme 3 - Planning Phase For Motion Comic
-- [ ] Theme 4 - Turning Webcomic Into Motion Comic
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-<!-- LICENSE -->
-## License
+### Code Splitting
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
 
-<!-- CONTACT -->
-## Contact
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Francois Smith - contact@francois-smith.com
+### Making a Progressive Web App
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
+### Advanced Configuration
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-* [Img Shields](https://shields.io)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+### Deployment
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
