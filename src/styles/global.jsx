@@ -16,6 +16,8 @@ const GlobalStyles = createGlobalStyle`
     }
     body {
         background-color: ${props => props.theme.colors.main};
+        display: flex;
+        justify-content: center;
     }
 `;
 
