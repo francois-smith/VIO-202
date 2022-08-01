@@ -11,9 +11,13 @@
     "react-dom": "^18.2.0",
     "react-particles": "^2.1.4",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.1.4",
     "rive-react": "^3.0.21",
     "styled-components": "^5.3.5",
     "styled-normalize": "^8.0.7",
+    "tsparticles": "^2.1.4",
+    "tsparticles-engine": "^2.1.4",
+    "tsparticles-preset-fire": "^2.1.4",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

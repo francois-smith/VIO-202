@@ -1,5 +1,5 @@
 export default {
     colors: {
-       main: "#ffffff"
+       main: "#000000"
     }
 }
