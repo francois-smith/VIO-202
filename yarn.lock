@@ -1603,6 +1603,13 @@
   resolved "https://registry.yarnpkg.com/@rive-app/canvas/-/canvas-1.0.75.tgz#96a4805d5b0040828d3f8649c7b2b49984dbca7b"
   integrity sha512-DLQL0Zhsg/XyTNlI2lwQiZ7hcSar87A0BfedB9EhmdVLl/m+y7P2zHUBtSZgpjtHPRf+XRhlLbrHyIKvZjgP9A==
 
+"@rive-app/react-canvas@^3.0.21":
+  version "3.0.21"
+  resolved "https://registry.yarnpkg.com/@rive-app/react-canvas/-/react-canvas-3.0.21.tgz#6b6d51fc4f72615c7755b89b12868003f1a6b1ee"
+  integrity sha512-CzOxIg3wH6m8SWm0Xov/3PAzqBkn1ZFnDnjRPorg61wZow7wbE6Z9yiH+BzjJA7pewV2sZJhB6U3AMJEWjbMOw==
+  dependencies:
+    "@rive-app/canvas" "1.0.75"
+
 "@rive-app/webgl@1.0.72":
   version "1.0.72"
   resolved "https://registry.yarnpkg.com/@rive-app/webgl/-/webgl-1.0.72.tgz#c61e7e3dd80148f4b484d6ca14c5ec081969e43c"
