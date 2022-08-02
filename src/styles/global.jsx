@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
         background-color: ${props => props.theme.colors.main};
         display: flex;
         justify-content: center;
+        font-family: 'Cinzel', serif;;
     }
 `;
 
