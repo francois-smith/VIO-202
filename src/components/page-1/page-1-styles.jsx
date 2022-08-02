@@ -1,49 +1,50 @@
 import styled from "styled-components";
 
 export const PageContainer = styled.div`
-    width: 70%;
+    width: 1000px;
     position: relative;
     margin: 20px;
     
     #page-1-background{
         position: absolute;
-        width: 750px;
+        width: 1000px;
         height: auto;
     }
 
     #page-1-frames{
-        width: 750px;
+        width: 1000px;
         height: auto;
         position: relative;
+        pointer-events: none;
     }
 
     #page-1-panel1{
         position: absolute;
-        width: 712px;
+        width: 948px;
         height: auto;
-        left: 20px;
-        top: 20px;
+        left: 29px;
+        top: 28px;
     }
 
     #page-1-panel2{
         position: absolute;
-        width: 206.25px;
+        width: 274px;
         height: auto;
-        left: 20px;
-        top: 324px;
+        left: 29px;
+        top: 432px;
     }
 
     #page-1-panel3{
         position: absolute;
-        width: 225.25px;
+        width: 301px;
         height: auto;
-        left: 250px;
-        top: 324px;
+        left: 334px;
+        top: 432px;
     }
 
     #page-1-panel5{
         position: absolute;
-        width: 678px;
+        width: 904px;
         height: auto;
         bottom: 3.5px;
         left: 0;
