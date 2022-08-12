@@ -11,6 +11,7 @@ export const PageContainer = styled.div`
         height: auto;
         top: 0px;
         left: 0px;
+        pointer-events: none;
     }
 
     #page-2-frames{
@@ -26,14 +27,6 @@ export const PageContainer = styled.div`
         height: auto;
         left: 29px;
         top: 430px;
-    }
-
-    #page-2-panel4{
-        position: absolute;
-        width: 420px;
-        height: auto;
-        right: 29px;
-        top: 400px;
     }
 
     #page-2-panel5{
