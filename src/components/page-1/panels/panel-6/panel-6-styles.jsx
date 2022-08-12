@@ -53,11 +53,10 @@ export const PanelContainer = styled.div`
 
         p{
             position: absolute;
-            top: 10px;
-            right: 8px;
-            font-weight: 600;
+            top: 8px;
+            right: 18px;
             text-align: center;
-            font-size: 14px;
+            font-size: 15px;
         }
     }
 
