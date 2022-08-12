@@ -26,14 +26,6 @@ export const PageContainer = styled.div`
         top: 28px;
     }
 
-    #page-1-panel2{
-        position: absolute;
-        width: 274px;
-        height: auto;
-        left: 29px;
-        top: 432px;
-    }
-
     #page-1-panel3{
         position: absolute;
         width: 301px;
