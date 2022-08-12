@@ -10,15 +10,15 @@ const GlobalStyles = createGlobalStyle`
     }
     html {
         scroll-behavior: smooth;
-        overflow-x: hidden;
         position: absolute;
-        width: 100%;  
+        width: 100vw;
+        overflow-x: hidden;
     }
     body {
         background-color: ${props => props.theme.colors.main};
         display: flex;
         justify-content: center;
-        font-family: 'Cinzel', serif;;
+        font-family: "Comic Sans MS";
     }
 `;
 
