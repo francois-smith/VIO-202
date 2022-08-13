@@ -20,7 +20,7 @@ export class Background extends React.Component{
 					},
 				},
 				color: {
-					value: ["#fdcf58", "#757676", "#f27d0c", "#2e4546", "#414042"],
+					value: ["#1673a5", "#757676", "#28A9F0", "#2e4546", "#414042"],
 				},
 				opacity: {
 					value: { min: 0.1, max: 0.5 },
