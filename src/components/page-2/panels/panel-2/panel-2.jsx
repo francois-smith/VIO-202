@@ -2,10 +2,11 @@ import React from 'react'
 import Rive, { useRive, useStateMachineInput } from '@rive-app/react-canvas';
 import {PanelContainer} from './panel-2-styles'
 
-export function Drops() {
+export function Animation() {
   const { rive, RiveComponent } = useRive({
-    src: '/media/anims/page-2-panel-2-drops.riv',
+    src: '/media/anims/page_2.riv',
         stateMachines: "State Machine 1",
+        artboard: 'Panel 2',
         autoplay: true,
   });
 
@@ -20,8 +21,7 @@ export function Drops() {
 export default function panel2() {
     return (
         <PanelContainer>
-            <Rive src={"/media/anims/page-2-panel-2.riv"} />
-            <Drops/>
+            <Animation />
         </PanelContainer>
     )
 }

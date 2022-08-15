@@ -43,6 +43,6 @@ export const PanelContainer = styled.div`
     }
 
     &:hover img{
-        animation: ${Hover} 0.65s linear forwards;
+        animation: ${Hover} 0.65s linear 3.8s forwards;
     }
 `;
