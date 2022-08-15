@@ -1,5 +1,6 @@
 import React from 'react'
 import { PageContainer } from './page-2-styles'
+import Panel1 from './panels/panel-1/panel-1'
 import Panel2 from './panels/panel-2/panel-2'
 import Panel3 from './panels/panel-3/panel-3'
 import Panel4 from './panels/panel-4/panel-4'
@@ -7,6 +8,7 @@ import Panel4 from './panels/panel-4/panel-4'
 function page5() {
     return (
         <PageContainer>
+            <Panel1/>
             <Panel2/>  
             <Panel3/>
             <Panel4/>  
