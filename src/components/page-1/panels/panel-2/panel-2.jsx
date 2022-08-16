@@ -8,7 +8,7 @@ export function Animation() {
     const [play, { stop }] = useSound(Book, {
         loop: true,
         playbackRate: 1.2,
-        volume: 0.75,
+        volume: 0.4,
     });
 
     const { rive, RiveComponent } = useRive({

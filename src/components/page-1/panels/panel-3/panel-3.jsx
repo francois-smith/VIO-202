@@ -6,16 +6,16 @@ import Book from '../../../../sounds/book.mp3';
 
 export function Animation() {
     const { rive, RiveComponent } = useRive({
-      src: '/media/anims/page_1.riv',
-          stateMachines: "State Machine 1",
-          artboard: 'Panel 3',
-          autoplay: true,
+        src: '/media/anims/page_1.riv',
+        stateMachines: "State Machine 1",
+        artboard: 'Panel 3',
+        autoplay: true,
     });
 
     const [play, { stop }] = useSound(Book, {
         loop: true,
         playbackRate: 1.2,
-        volume: 0.75,
+        volume: 0.15,
     });
   
     const hoverInput = useStateMachineInput(rive, "State Machine 1", "Hover");
