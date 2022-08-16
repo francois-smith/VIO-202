@@ -3,6 +3,7 @@ import Rive, { useRive, useStateMachineInput } from '@rive-app/react-canvas';
 import {PanelContainer} from './panel-6-styles'
 import useSound from 'use-sound';
 import Sigh from '../../../../sounds/sigh2.mp3';
+import Portal from '../../../../sounds/portal.mp3';
 
 export function Animation() {
     const { rive, RiveComponent } = useRive({
@@ -17,17 +18,25 @@ export function Animation() {
         playbackRate: 0.75,
 	});
 
+    const [playPortal, { stop: StopPortal }] = useSound(Portal, {
+		loop: true,
+		volume: 0.7,
+        playbackRate: 0.8,
+	});
+
 	const hoverInput = useStateMachineInput(rive, "State Machine 1", "Hover");
 	const unHoverInput = useStateMachineInput(rive, "State Machine 1", "unHover");
 
 	const hoverAction = () => {
         hoverInput && hoverInput.fire();
         play();
+        playPortal();
     }
 
     const unhoverAction = () => {
         unHoverInput && unHoverInput.fire();
-        stop()
+        stop();
+        StopPortal();
     }
   
     return (

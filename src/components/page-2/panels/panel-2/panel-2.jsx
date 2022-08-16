@@ -15,7 +15,7 @@ export function Animation() {
 
 	const [playDrip, { stop: stopDrip }] = useSound(Drip, {
 		loop: true,
-		volume: 0.8,
+		volume: 2,
 	});
 
 	const [playFire, { stop: stopFire }] = useSound(Fire, {

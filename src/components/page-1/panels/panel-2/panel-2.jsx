@@ -7,7 +7,7 @@ import Book from '../../../../sounds/book.mp3';
 export function Animation() {
     const [play, { stop }] = useSound(Book, {
         loop: true,
-        playbackRate: 1.2,
+        playbackRate: 1.1,
         volume: 0.4,
     });
 

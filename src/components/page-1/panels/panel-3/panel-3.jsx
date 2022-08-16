@@ -15,7 +15,7 @@ export function Animation() {
     const [play, { stop }] = useSound(Book, {
         loop: true,
         playbackRate: 1.2,
-        volume: 0.15,
+        volume: 0.35,
     });
   
     const hoverInput = useStateMachineInput(rive, "State Machine 1", "Hover");
