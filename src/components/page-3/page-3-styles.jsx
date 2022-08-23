@@ -28,4 +28,12 @@ export const PageContainer = styled.div`
         left: 29px;
         bottom: 29px;
     }
+
+    #page-3-panel2{
+        position: absolute;
+        width: 298px;
+        height: 897px;
+        left: 29px;
+        top: 439px;
+    }
 `;
