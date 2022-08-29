@@ -4,6 +4,7 @@ import {PanelContainer} from './panel-1-styles'
 import useSound from 'use-sound';
 import Fire from '../../../../sounds/fire.mp3';
 import Walk from '../../../../sounds/walk2.mp3';
+import Hmmm from '../../../../sounds/hmmm2.mp3';
 
 export function Animation() {
 	const { rive, RiveComponent } = useRive({
@@ -22,6 +23,12 @@ export function Animation() {
 		playbackRate: 1.25,
 	});
 
+	const [playHmmm, { stop: stopHmmm }] = useSound(Hmmm, {
+		loop: false,
+		volume: 0.5,
+		playbackRate: 1,
+	});
+
 	const [playWalk, { stop: stopWalk }] = useSound(Walk, {
 		loop: false,
 		volume: 0.4,
@@ -32,12 +39,14 @@ export function Animation() {
 		hoverInput && hoverInput.fire();
 		playFire();
 		playWalk();
+		playHmmm();
 	}
 
 	const unhoverAction = () => {
 		unHoverInput && unHoverInput.fire();
 		stopFire();
 		stopWalk();
+		stopHmmm();
 	}
 	
 	return (
