@@ -13,7 +13,7 @@ export const AboutSection = styled.div`
         position: absolute;
         height: 80px; 
         top: 75px;
-        left: 30px;
+        left: 45px;
         transition: all 0.28s ease-in-out;
     }
 

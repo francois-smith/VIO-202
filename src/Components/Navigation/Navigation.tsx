@@ -8,15 +8,15 @@ const Header: React.FC = () => {
             <NavigationContainer>
                 <NavigationLinks>
                     <a href='/'><img src="/Media/Images/Logo-Main.png" alt="Main Logo"/></a>
-                    <div>
+                    <div className='pfeffer'>
                         <li className="third">
                             <Link href='#AboutSection'>
-                                About
+                                ABOUT
                             </Link>
                         </li>
                         <li className="first">
                             <Link href='#ProjectsSection'>
-                                Projects
+                                PROJECTS
                             </Link>
                         </li>
                         

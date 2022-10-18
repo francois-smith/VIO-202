@@ -32,7 +32,7 @@ export const Name = keyframes`
 
 
 export const HeroSection = styled.div`
-    height: 800px;
+    height: 650px;
     position: relative;
    
     @keyframes dash {
@@ -62,8 +62,8 @@ export const HeroSection = styled.div`
 `;
 
 export const HeroInfo = styled.div`
-    padding-left: 250px;
-    padding-top: 27.5vh;
+    padding-left: 200px;
+    padding-top: 30vh;
     margin-right: auto;
     font-family: Raleway, sans-serif;
     position: relative;
@@ -71,24 +71,24 @@ export const HeroInfo = styled.div`
     #Welcome {
         padding-left: 2px;
         opacity: 0;
-        font-weight: bold;
-        font-size: 40px;
-        padding-bottom: 15px;
+        font-weight: 600;
+        font-size: 34px;
+        padding-bottom: 10px;
         animation: ${Welcome} 0.6s linear 0.5s forwards;
         pointer-events: none;
     } 
 
     #Name {
         opacity: 0;
-        font-weight: bold;
-        font-size: 80px;
+        font-weight: 600;
+        font-size: 70px;
         animation: ${Name} 0.7s linear 0.6s forwards;
         pointer-events: none;
     } 
 
     @media ${props => props.theme.breakpoints.xxl} {
         padding-left: 150px;
-        padding-top: 24vh;
+        padding-top: 28vh;
         margin-right: auto;
 
         #Welcome {
@@ -150,7 +150,7 @@ export const HeroInfo = styled.div`
 `;
 
 export const HeroImage = styled.img`
-    height: 700px;
+    height: 600px;
     position: absolute;
     bottom: 0px;
     right: 12vw;

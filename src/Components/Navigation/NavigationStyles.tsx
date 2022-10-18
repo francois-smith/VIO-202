@@ -114,7 +114,7 @@ export const NavigationContainer = styled.div`
     }
 
     img {
-        height: 75px;
+        height: 65px;
     }
 
     @media ${props => props.theme.breakpoints.xxl} {

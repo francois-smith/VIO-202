@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Animation = styled.div`
     svg {
-        height: 700px;
+        height: 650px;
         position: absolute;
         bottom: 0px;
-        right: 6vw;
+        right: 4vw;
 
         @media ${props => props.theme.breakpoints.xxl}{
             right: 4vw;

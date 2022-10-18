@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                         <path d="M0.124969 3.3125L0.124969 6.125L4.49997 3L8.87497 6.125V3.3125L4.49997 0.187501L0.124969 3.3125Z" fill="white"/>
                         <path d="M0.124969 7.6875L0.124969 10.5L4.49997 7.375L8.87497 10.5V7.6875L4.49997 4.5625L0.124969 7.6875Z" fill="white"/>
                     </svg>
-                    <p>BACK TO TOP</p>
+                    <p className='pfeffer'>BACK TO TOP</p>
                 </a>
             </FooterToTop>
             <FooterSocials>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                     <AiFillLinkedin className='svg_icon'></AiFillLinkedin>
                 </a>
             </FooterSocials>
-            <p id='legal'>@{today.getFullYear()} Francois Smith All Rights Reserved.</p>
+            <p id='legal' className='pfeffer'>@{today.getFullYear()} Francois Smith All Rights Reserved.</p>
         </FooterSection>
     )
 }

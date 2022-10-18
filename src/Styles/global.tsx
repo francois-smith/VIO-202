@@ -38,7 +38,7 @@ export default createGlobalStyle<{theme: ThemeClass}>`
 
     .Section_Heading {
         padding-bottom: 50px;
-        padding-left: 125px;
+        padding-left: 150px;
         padding-top: 50px;
         display: inline-block;
         font-size: 40px;
