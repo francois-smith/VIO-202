@@ -28,11 +28,11 @@ const DefaultTheme: ThemeClass = {
         main: "Montserrat, sans-serif"
     },
     colors: {
-        primary: "#584895",
-        accent: "#00adee",
-        background1: "#0D0D0D",
+        primary: "#28a9f0",
+        accent: "#153c77",
+        background1: "#212121",
         background2: "#171717",
-        text: "#f0f0f0"
+        text: "#bababa"
     },
     breakpoints: {
         xs: 'screen and (max-width: 320px)',

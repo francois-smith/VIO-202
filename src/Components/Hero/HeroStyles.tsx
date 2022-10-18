@@ -30,52 +30,11 @@ export const Name = keyframes`
     }
 `;  
 
-export const Dev = keyframes`
-    0% {
-        transform: translateY(100px);
-    }
-
-    40% {
-        opacity: 0%;
-    }
-
-    100% {
-        transform: translateY(-10px);
-        opacity: 1;
-    }
-`; 
-
-export const CV = keyframes`
-    0% {
-        transform: translateY(120px);
-    }
-
-    40% {
-        opacity: 0%;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-`; 
 
 export const HeroSection = styled.div`
     height: 800px;
     position: relative;
-
-    #folder {
-        position: absolute;
-        bottom: 0;
-        margin-left: 70px;
-    }
-
-    .path {
-        stroke-dasharray: 1500;
-        stroke-dashoffset: 1500;
-        animation: dash 2s linear forwards 1.25s;
-    }
-        
+   
     @keyframes dash {
         to {
             stroke-dashoffset: 0;
@@ -83,13 +42,6 @@ export const HeroSection = styled.div`
     }
 
     @media ${props => props.theme.breakpoints.xxl} {
-        #folder {
-            position: absolute;
-            bottom: 0;
-            height: 250px;
-            margin-left: -40px;
-        }
-
         height: 600px;
     }
 
@@ -98,10 +50,6 @@ export const HeroSection = styled.div`
         flex-direction: column;
         align-items: center;
         height: 600PX;
-
-        .path {
-           display: none;
-        }
     }
 
     @media ${props => props.theme.breakpoints.md} {
@@ -115,7 +63,7 @@ export const HeroSection = styled.div`
 
 export const HeroInfo = styled.div`
     padding-left: 250px;
-    padding-top: 22vh;
+    padding-top: 27.5vh;
     margin-right: auto;
     font-family: Raleway, sans-serif;
     position: relative;
@@ -125,7 +73,7 @@ export const HeroInfo = styled.div`
         opacity: 0;
         font-weight: bold;
         font-size: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 15px;
         animation: ${Welcome} 0.6s linear 0.5s forwards;
         pointer-events: none;
     } 
@@ -138,52 +86,9 @@ export const HeroInfo = styled.div`
         pointer-events: none;
     } 
 
-    #Dev {
-        opacity: 0;
-        font-weight: bolder;
-        font-size: 25px;
-        color: #929292;
-        margin-top: -10px;
-        margin-left: 5px;
-        animation: ${Dev} 0.8s linear 0.7s forwards;
-        pointer-events: none;
-        margin-bottom: 5px;
-    }
-
-    #CV{
-        opacity: 0;
-        font-size: 25px;
-        animation: ${CV} 0.9s linear 0.8s forwards;
-        text-decoration: none;
-        position: relative;
-        z-index: 100;
-    }
-
-    .cv-button {
-        width: 175px;
-        background-image: linear-gradient(to right, ${props => props.theme.colors.accent}, ${props => props.theme.colors.primary});
-        padding: 2px !important;
-        border-radius: 6px;
-        transition: all 0.25s;
-        animation: ${CV} 0.9s linear 0.8s forwards;
-        transform: translateY(120px);
-        margin-left: 5px;
-
-        &:hover{
-            filter: opacity(0.3);
-        }
-
-        div {
-            padding: 5px;
-            border-radius: 6px;
-            text-align: center;
-            background: ${props => props.theme.colors.background2} !important;
-        }
-    }
-
     @media ${props => props.theme.breakpoints.xxl} {
         padding-left: 150px;
-        padding-top: 18vh;
+        padding-top: 24vh;
         margin-right: auto;
 
         #Welcome {
@@ -194,12 +99,6 @@ export const HeroInfo = styled.div`
             font-size: 60px;
         } 
 
-        #Dev {
-            font-size: 22px;
-        }
-        .cv-button {
-            width: 150px;
-        }
     }
 
     @media ${props => props.theme.breakpoints.lg} {
@@ -213,15 +112,6 @@ export const HeroInfo = styled.div`
         #Name {
             font-size: 50px;
         } 
-
-        #Dev {
-            font-size: 20px;
-            padding-top: 10px;
-        }
-
-        #CV{
-            display: none;
-        }
     }
     
     @media ${props => props.theme.breakpoints.md} {
@@ -241,11 +131,6 @@ export const HeroInfo = styled.div`
         #Name {
             font-size: 38px;
         } 
-
-        #Dev {
-            font-size: 16px;
-            padding-top: 10px;
-        }
     }
 
     @media ${props => props.theme.breakpoints.xs} {
@@ -261,11 +146,6 @@ export const HeroInfo = styled.div`
         #Name {
             font-size: 35px;
         } 
-
-        #Dev {
-            font-size: 14px;
-            padding-top: 10px;
-        }
     }
 `;
 

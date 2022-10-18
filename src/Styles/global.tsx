@@ -3,9 +3,9 @@ import { normalize } from "styled-normalize";
 import { ThemeClass } from './theme'
 
 export default createGlobalStyle<{theme: ThemeClass}>`
-    ${normalize};
+     ${normalize};
     @import url('https://fonts.googleapis.com/css2?family=Montserrat');
-
+    
     * {
         margin: 0;
         padding: 0;
@@ -45,17 +45,11 @@ export default createGlobalStyle<{theme: ThemeClass}>`
         line-height: 128%;
         letter-spacing: 0.22em;
         pointer-events: none;
-
-        &::before {
-            content: "";
-            margin-bottom: 5px;
-            float: left;
-            background: linear-gradient(to right, ${props => props.theme.colors.accent}, ${props => props.theme.colors.primary});
-            width: 50%;
-            height: 4px;
-            border-radius: 5px;
-            z-index: 1;
-        }
+        position: relative;
+        font-family: "pfeffer", sans-serif;
+        transition: all 0.28s ease-in-out;
+        background: linear-gradient(to right, ${props => props.theme.colors.accent}, ${props => props.theme.colors.primary});
+        -webkit-background-clip: text;
 
         @media ${props => props.theme.breakpoints.xxl}{
             padding-bottom: 40px;

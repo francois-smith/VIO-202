@@ -22,10 +22,8 @@ class Burger extends React.Component<{}, {menuOpen: false}> {
 		return (
 	  		<Menu isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)} right customBurgerIcon={<img src="/Media/SVG/burger-icon.svg" alt="Burger Icon" /> }>
 				<a href='/' className="menu-logo"><img src="/Media/Images/Logo-Main.png" alt="Main Logo"/></a>
-				<a onClick={() => this.closeMenu()} className="menu-item" href="#ProjectsSection">Projects</a>
-				<a onClick={() => this.closeMenu()} className="menu-item" href="#TechnologiesSection">Technologies</a>
 				<a onClick={() => this.closeMenu()} className="menu-item" href="#AboutSection">About Me</a>
-				<a onClick={() => this.closeMenu()} className="menu-item" href="#ContactSection">Contact</a>
+				<a onClick={() => this.closeMenu()} className="menu-item" href="#ProjectsSection">Projects</a>
                 <div>
                     <a href='https://github.com/francois-smith'>
                         <AiFillGithub className='svg_icon'></AiFillGithub>
@@ -37,13 +35,6 @@ class Burger extends React.Component<{}, {menuOpen: false}> {
                         <AiFillLinkedin className='svg_icon'></AiFillLinkedin>
                     </a>
                 </div>
-				<a href="/Media/CV/Francois-Smith-CV.pdf" id="CV" target="_blank">
-					<div className="bm-cv-button">
-						<div>
-							<span className="Text-Gradient">View CV</span>
-						</div>
-					</div>
-				</a>
 	  		</Menu>
 		);
   	}

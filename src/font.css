@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'pfeffer';
+    src: local('pfeffer'), url(./fonts/PfefferMediaeval.otf) format('opentype');
+}
+
+.pfeffer {
+    font-family: 'pfeffer' !important;
+}

@@ -133,6 +133,12 @@ export const NavigationContainer = styled.div`
 export const NavigationLinks = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    div{
+        display: flex;
+    }
 
     li {
         padding-left: 40px;
@@ -143,21 +149,6 @@ export const NavigationLinks = styled.div`
     .second{animation: ${FadeIn} 0.2s linear 0.1s forwards;}
     .third{animation: ${FadeIn} 0.2s linear 0.2s forwards;}
     .fourth{animation: ${FadeIn} 0.2s linear 0.3s forwards;}
-`;
-
-export const NavigationSocials = styled.div`
-    align-items: center;
-    display: flex;
-
-    .svg_icon {
-        margin-left: 15px;
-        padding-top: 2px;
-        transform: scale(2.5);
-    }
-
-    .first{animation: ${FadeIn} 0.2s linear forwards;}
-    .second{animation: ${FadeIn} 0.2s linear 0.2s forwards;}
-    .third{animation: ${FadeIn} 0.2s linear 0.4s forwards;}
 `;
 
 export const Link = styled.a`
@@ -197,46 +188,4 @@ export const Link = styled.a`
     }
 
     
-`;
-
-export const Social = styled.a`
-    opacity: 0;
-    margin-right: 40px;
-    position: relative;
-    display: inline-block;
-    color:  ${props => props.theme.colors.text};
-
-    &:hover{
-        color: #666;
-
-        span::after, span::before {
-            width: 65%;
-            left: 0;
-        }
-    }
-
-    span::after, span::before {
-        content: ''; 
-        position: absolute;
-        top: calc(100% + 2px);
-        width: 0;
-        right: 0;
-        height: 3px;
-    }
-    
-    span::before {
-        transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
-        background: ${props => props.theme.colors.accent};
-    }
-    
-    span::after {
-        transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-        background: ${props => props.theme.colors.primary};
-    }
-
-    &:hover{
-        .svg_icon {
-            color: ${props => props.theme.colors.primary};
-        }
-    }
 `;
