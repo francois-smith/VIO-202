@@ -1,0 +1,26 @@
+.float-button{
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.float-button span{
+    background: linear-gradient(to right, #28a9f0, #153c77);
+    -webkit-background-clip: text;
+    transition: all 0.2s ease-in-out;
+    color: rgb(207, 207, 207);
+    font-size: 28px;
+}
+
+.float-button:hover span{
+    -webkit-text-fill-color: transparent;
+}
+
+.float-button .arrow{
+    font-size: 24px;
+    padding-right: 5px;
+}
