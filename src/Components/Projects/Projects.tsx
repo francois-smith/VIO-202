@@ -1,8 +1,8 @@
 import React from 'react';
-import { ProjectSection, ProjectsContainer, ProjectCard } from './ProjectsStyles';
+import { ProjectSection, ProjectsContainer, ProjectCard1, ProjectCard2 } from './ProjectsStyles';
 import Rive, { useRive, useStateMachineInput } from '@rive-app/react-canvas';
 
-const Project1: React.FC = () => {
+const Project3: React.FC = () => {
     const { rive, RiveComponent} = useRive({
         src: './Media/Anims/portfolio_book.riv',
         artboard: 'Artboard',
@@ -23,7 +23,7 @@ const Project1: React.FC = () => {
     }
 
     return (
-        <RiveComponent id='project2' onMouseEnter={() => hoverAction()} onMouseLeave={() => unhoverAction()}/>
+        <RiveComponent id='project3' onMouseEnter={() => hoverAction()} onMouseLeave={() => unhoverAction()}/>
     );
 };
 
@@ -33,14 +33,19 @@ const Projects: React.FC = () => {
             <img className="heading-sword" src="./Media/SVG/Sword.svg" alt="Sword" />
             <h2 className='Section_Heading'>PROJECTS</h2>
             <ProjectsContainer>
-                <ProjectCard>
+                <ProjectCard1>
+
+                </ProjectCard1>
+                <ProjectCard2>
                     <div>
-                        <Project1/>
+                        <Project3/>
                     </div>
-                    <div>
-                        <h3><span className='pfeffer'>PROJECT</span> 2</h3>
+                    <div className='ps-3 align-end'>
+                        <h2 ><span className='pfeffer'>PROJECT</span> <span className='Text-Gradient'>2</span></h2>
+                        <p className='justify'>Project 3 required us to take our comics from first year and animate a large portion of panels from them to apply the knowledge learned from this year.</p><br/>
+                        <p className='justify'>I learnt a lot about the animation workflow and making everything cohesive, animating type proved to be the most difficult because I struggled to see it as a character rather than text.</p>
                     </div>
-                </ProjectCard>
+                </ProjectCard2>
             </ProjectsContainer>
         </ProjectSection>
     );
