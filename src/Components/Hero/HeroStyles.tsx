@@ -32,8 +32,10 @@ export const Name = keyframes`
 
 
 export const HeroSection = styled.div`
+    background-color:  ${props => props.theme.colors.background2};
     height: 650px;
     position: relative;
+    z-index: 1;
    
     @keyframes dash {
         to {
@@ -67,6 +69,7 @@ export const HeroInfo = styled.div`
     margin-right: auto;
     font-family: Raleway, sans-serif;
     position: relative;
+    z-index: 1;
 
     #Welcome {
         padding-left: 2px;

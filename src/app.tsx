@@ -9,10 +9,12 @@ import Footer from './Components/Footer/Footer';
 const App: React.FC = () => {
   return (
     <Theme>
-      <Navigation />
-      <Hero />
-      <About />
-      <Project />
+      <main>
+        <Navigation />
+        <Hero />
+        <Project />
+        <About />
+      </main>
       <Footer/>
     </Theme>
   );

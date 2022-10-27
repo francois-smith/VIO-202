@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const AboutSection = styled.div`
-    background-color:  ${props => props.theme.colors.background1};
+    background-color:  ${props => props.theme.colors.background2};
     height: 500px;
     position: relative;
+
 
     .Section_Heading{
         font-family: "pfeffer";

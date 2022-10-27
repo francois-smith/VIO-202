@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterSection = styled.div`
+export const FooterSection = styled.footer`
     background-color:  ${props => props.theme.colors.background1};
     font-family: Nunito, sans-serif;
     height: auto;

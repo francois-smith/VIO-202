@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const ProjectSection = styled.div`
-    background-color:  ${props => props.theme.colors.background2};
+    background-color:  ${props => props.theme.colors.background1};
     position: relative;
     padding-bottom: 50px;
+    z-index: 1;
+    box-shadow: inset 0px 5px 5px rgba(0,0,0,0.2), inset 0px -5px 5px rgba(0,0,0,0.2); 
 
     .Section_Heading{
         font-family: "pfeffer";
