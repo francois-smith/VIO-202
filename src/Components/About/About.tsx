@@ -1,13 +1,27 @@
 import React from 'react';
-import { AboutSection } from './AboutStyles';
+import { AboutSection, AboutContainer } from './AboutStyles';
 
 const Card: React.FC = () => {
     return (
        <AboutSection id='AboutSection'>
-            <img className="heading-sword" src="./Media/SVG/Sword.svg" alt="Sword" />
-            <h2 className='Section_Heading'>ABOUT ME</h2>
-            
-            
+            <AboutContainer>
+                <span className="tags top-tags">
+                    <span className="tag">
+                        &lt;html&gt;
+                        <br />
+                    </span>
+                </span>
+                <div className="page-inner">
+                    <h2>Who am I?</h2>
+                    <div className="about-containers">
+
+                    </div>
+                </div>
+                <span className="tags bottom-tags">
+                        <br />
+                        &lt;/html&gt;
+                </span>
+            </AboutContainer>
        </AboutSection>
     );
 };
