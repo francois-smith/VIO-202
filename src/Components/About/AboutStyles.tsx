@@ -109,13 +109,22 @@ export const AboutContainer = styled.div`
         bottom: -1.5rem;
     }
 
-    .about-containers{
-        transform: translateY(25px);
-        position: relative;
-        height: 250px;
-    }
+    
 
-    .about-containers::before {
+    .page-inner{
+        padding-top: 140px;
+        padding-left: 150px;
+    }
+`;
+
+export const AboutCards = styled.div`
+    display: flex;
+    transform: translateY(25px);
+    position: relative;
+    height: 250px;
+    width: 90%;
+
+    &::before {
         -webkit-text-fill-color: #515152; 
         content: '<div>';
         font-family: 'pfeffer',cursive;
@@ -126,7 +135,7 @@ export const AboutContainer = styled.div`
         left: -2.5rem;
     }
 
-    .about-containers::after {
+    &::after {
         -webkit-text-fill-color: #515152; 
         content: '</div>';
         font-family: 'pfeffer',cursive;
@@ -137,8 +146,60 @@ export const AboutContainer = styled.div`
         bottom: -2rem;
     }
 
-    .page-inner{
-        padding-top: 140px;
-        padding-left: 150px;
+    .about-icon{
+        width: 75px;
+        height: 75px;
+    }
+
+    .aboutCard{
+        //gradient border for cards
+        width: 10%;
+        min-width: 120px;
+        border: 3px solid #515152;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 0 5px;
+        transition: all 0.5s ease-in-out;
+
+        img{
+            transform: translateY(65px);
+            transition: all 0.38s ease-in-out;
+        }
+
+        .card-content{
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+            transform: translateY(20px);
+            padding-top: 20px;
+        }
+
+        .Technologies{
+            display: flex;
+            padding-top: 8px;
+
+            *{
+                margin: 0 5px;
+                font-size: 2rem;
+            }
+        }
+
+        h3{
+            font-size: 2rem;
+            padding-bottom: 5px;
+        }
+    }
+
+    .active-card{
+        width: 80% !important;
+
+        img{
+            transform: translateY(0);
+        }
+
+        .card-content{
+            opacity: 1;
+            transform: translateY(0px);
+            transition: all 0.4s 0.4s ease-in-out;
+        }
     }
 `;

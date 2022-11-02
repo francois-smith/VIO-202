@@ -179,11 +179,6 @@ export const ProjectCard2 = styled.div`
         }
     }
 
-    .button-div{
-        display: flex;
-        justify-content: end;
-    }
-
     #project3{
         width: 320px !important;
         height: 410px !important;
