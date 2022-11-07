@@ -4,6 +4,7 @@ export const AboutSection = styled.div`
     background-color:  ${props => props.theme.colors.background2};
     height: 650px;
     position: relative;
+    z-index: 2;
 
     .Section_Heading{
         font-family: "pfeffer";

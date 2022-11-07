@@ -10,6 +10,7 @@ const App: React.FC = () => {
   return (
     <Theme>
       <main>
+        <div className='overlay'></div>
         <Navigation />
         <Hero />
         <Project />

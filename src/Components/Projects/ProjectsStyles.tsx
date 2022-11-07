@@ -1,27 +1,63 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+//keyframes
+const stuck = keyframes`
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(1deg);
+    }
+    60% {
+        transform: rotate(-0.5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+`;
+
+const move = keyframes`
+    0% {
+        transform: translatey(0px) translateX(0px) rotate(0deg);
+    }
+    40%{
+        transform: translatey(0px) translateX(-25px) rotate(10deg);
+    }
+    100% {
+        transform: translatey(950px) translateX(-150px) rotate(90deg);
+    }
+`;
 
 export const ProjectSection = styled.div`
     background-color:  ${props => props.theme.colors.background1};
     position: relative;
-    padding-bottom: 50px;
     z-index: 1;
+    padding-bottom: 50px;
     box-shadow: inset 0px 5px 5px rgba(0,0,0,0.2), inset 0px -5px 5px rgba(0,0,0,0.2); 
 
     .Section_Heading{
         font-family: "pfeffer";
     }
 
-    .heading-sword{
+    .swordContainer{
         position: absolute;
-        height: 80px; 
         top: 75px;
         left: 45px;
         transition: all 0.28s ease-in-out;
+
+        .heading-sword{
+            height: 80px; 
+        }
     }
 
     &:hover{
+        .swordContainer{
+            animation: ${move} 1.7s 0.3s forwards ease-in-out;
+        }
+
         .heading-sword{
-            transform: translateX(-15px);
+            animation: ${stuck} 0.8s 2.1s infinite ease-in-out;
+            transform-origin: right center;
         }
 
         .Section_Heading{

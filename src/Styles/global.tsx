@@ -52,6 +52,21 @@ export default createGlobalStyle<{theme: ThemeClass}>`
         -webkit-text-fill-color: transparent; 
     }
 
+    .overlay{
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        background-color: ${props => props.theme.colors.background2};
+        position: fixed;
+        z-index:9999;
+        transition: all 0.75s ease-in-out;
+        pointer-events: none;
+    }
+
+    .overlay-show{
+        opacity: 1;
+    }
+
     .Section_Heading {
         padding-bottom: 50px;
         padding-left: 150px;
