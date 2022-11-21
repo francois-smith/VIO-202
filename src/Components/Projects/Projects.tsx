@@ -53,13 +53,24 @@ const Project3: React.FC = () => {
 };
 
 const goToPageSameTab = (url: string) => {
-    let overlay = document.querySelector('.overlay')?.classList.add('overlay-show');
+    document.querySelector('.yeetus')?.classList.add('overlay');
+    document.querySelector('.yeetus')?.classList.add('overlay-show');
     setTimeout(() => {
         window.location.href = url;
     }, 900);
 }
 
+
 const Projects: React.FC = () => {
+    React.useEffect(() => {
+        if(window.location.toString().includes("ProjectsSection")){
+            document.querySelector('.yeetus')?.classList.remove('overlay-show');
+        }
+        else{
+            document.querySelector('.yeetus')?.classList.remove('overlay');
+        }
+    }, []);
+
     return (
         <ProjectSection id='ProjectsSection'> 
             <div className='swordContainer'>
@@ -67,7 +78,7 @@ const Projects: React.FC = () => {
             </div>
             <h2 className='Section_Heading'>PROJECTS</h2>
             <ProjectsContainer>
-                <ProjectCard1>
+                <ProjectCard1 id="Theme2">
                     <div className='pe-3'>
                         <h2><span className='pfeffer'>PROJECT</span> 2 <span className='pfeffer divider'>|</span> <span className='pfeffer Text-Gradient'>INFOGRAPHIC</span></h2>
                         <p className='justify-start'>Project 2 tasked us with creating infographics for our comics that provided extra information, such as a stats section for our main characters, the world it takes place in, and other information.</p><br/>
@@ -85,7 +96,7 @@ const Projects: React.FC = () => {
                         </a>
                     </div>
                 </ProjectCard1>
-                <ProjectCard2>
+                <ProjectCard2 id="Theme3">
                     <div>
                         <a href="https://vio.francois-smith.com/">
                             <Project3/>

@@ -127,6 +127,38 @@ export const NavigationContainer = styled.div`
 
         width: 0vw;
     }
+
+    .first{
+        position: relative;
+        z-index: 100;
+    }
+
+    .sublist{
+        position: absolute;
+        display: flex;
+        opacity: 0;
+        flex-direction: column;
+        top: 100%;
+        z-index: 999;
+        right: -5px;
+        background: ${props => props.theme.colors.background1};
+        padding: 5px 15px;
+        transition: all 0.22s ease-in-out;
+
+        a{
+            padding: 5px 0px;
+            &:hover{
+                color: ${props => props.theme.colors.primary};
+            }
+        }
+        
+    }
+
+    .first:hover {
+        .sublist{
+             opacity: 1;
+        }
+    }
 `;
 
 

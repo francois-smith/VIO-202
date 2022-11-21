@@ -14,12 +14,23 @@ const Header: React.FC = () => {
                                 ABOUT
                             </Link>
                         </li>
-                        <li className="first">
-                            <Link href='#ProjectsSection'>
-                                PROJECTS
-                            </Link>
-                        </li>
-                        
+                        <div className="dropdownMenu">
+                            <li className="first">
+                                <Link href='#ProjectsSection'>
+                                    PROJECTS
+                                </Link>
+                                <div className='sublist'>
+                                    <a href='#Theme2'>
+                                        Theme 2
+                                    </a>
+                                    <a href='#Theme3'>
+                                        Theme 3
+                                    </a>
+                                </div>
+                            </li>  
+                            {/* dropdown sub list */}
+                            
+                        </div>
                     </div>
                 </NavigationLinks>
             </NavigationContainer>

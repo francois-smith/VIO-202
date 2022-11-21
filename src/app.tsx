@@ -10,7 +10,7 @@ const App: React.FC = () => {
   return (
     <Theme>
       <main>
-        <div className='overlay'></div>
+        <div className='yeetus overlay overlay-show'></div>
         <Navigation />
         <Hero />
         <Project />

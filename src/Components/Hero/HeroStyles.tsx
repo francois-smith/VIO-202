@@ -84,6 +84,7 @@ export const HeroInfo = styled.div`
     #Name {
         opacity: 0;
         font-weight: 600;
+        margin-left: -3px;
         font-size: 70px;
         animation: ${Name} 0.7s linear 0.6s forwards;
         pointer-events: none;
